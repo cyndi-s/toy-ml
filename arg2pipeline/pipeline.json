@@ -1,0 +1,49 @@
+{
+    "name": "toy-ml",
+    "path": "/Users/Shared/github-workspace/yorku-ease/toy-ml",
+    "python_version": "3.13.5",
+    "requirements": {
+        "py_reqs": "/Users/Shared/github-workspace/yorku-ease/toy-ml/requirements.txt",
+        "soft_reqs": null,
+        "hard_reqs": null
+    },
+    "workflow": [
+        {
+            "cmd": "python /Users/Shared/github-workspace/yorku-ease/toy-ml/train.py",
+            "main": "/Users/Shared/github-workspace/yorku-ease/toy-ml/train.py",
+            "steps": [
+                "train"
+            ],
+            "args_lib": "argparse",
+            "description": null,
+            "args": [
+                {
+                    "option_strings": [
+                        "--data"
+                    ],
+                    "input": true,
+                    "destination": "data",
+                    "default": "data.csv",
+                    "type": "str",
+                    "required": false,
+                    "choices": null,
+                    "help": null
+                },
+                {
+                    "option_strings": [
+                        "--out"
+                    ],
+                    "input": true,
+                    "destination": "out",
+                    "default": "model.pkl",
+                    "type": "str",
+                    "required": false,
+                    "choices": null,
+                    "help": null
+                }
+            ],
+            "ins": [],
+            "outs": []
+        }
+    ]
+}
