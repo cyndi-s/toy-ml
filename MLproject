@@ -1,0 +1,13 @@
+name: toy-ml
+conda_env: conda_toy-ml.yaml
+entry_points:
+  main:
+    parameters:
+      data:
+        type: str
+        default: data.csv
+      out:
+        type: str
+        default: model.pkl
+    command: python /Users/Shared/github-workspace/yorku-ease/toy-ml/train.py --data
+      {data} --out {out}
